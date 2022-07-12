@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+
+    <title>Upload Your Encrypted Video File and Paste Your Secret Key</title>
+
+    <style>
+        .parent_div {
+            width: 60vm;
+            height: 60vm;
+            background-color: #DBF3FA;
+            padding: 50px;
+            border-radius: 8px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent_div">
+        <h1>Upload Your File</h1>
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type="text" name="key" value="paste your secret keys"long test entry>
+      <input type=submit value= "Decrypt & Download Your Original File" >
+        </form>
+    </div>
+
+</body>
+
+</html>

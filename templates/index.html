@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <style>
+        
+        /* .button {
+            background-color: #725ac1;
+            border: red;
+            color: hsl(0, 0%, 100%);
+            padding: 100px 80px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 30px 10px;
+            cursor: pointer;
+        }
+        #container {
+            position: fixed;
+            left: 20%;
+            right: 20%;
+        } */
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            color: #3A3A3A;
+        }
+        header{
+            padding: 40px 0px;
+        }
+        .container{
+            background: url(/encrypt-and-decrypt-zip-files-with-secret-key-using-AES-algorithms/templates/noise.png);
+            height: 120vh;
+        }
+        .wrapper{
+            margin:0 80px;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-btn{
+            border: 2px solid #00C497;
+            border-radius: 8px;
+           display: flex;
+           align-items: center;
+           gap: 20px;
+           padding: 20px;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        p.for-button{
+            color: #00C497;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        .main-heading{
+            text-align: center;
+            margin: 60px 0 80px 0;
+        }
+        .main-heading h1{
+            font-size: 60px;
+            line-height: 90px;
+            margin: 0;
+            font-weight: bold;
+            
+        }
+        .main-heading span{
+           color: #00C497;
+        }
+
+        .main-mid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:32px;
+        }
+        
+        input.encryptcheckbox{
+            width: 30px;
+            height: 30px;
+        }
+        .encrypt, label{
+            padding-left: 16px;
+        }
+        input.decryptcheckbox{
+            width: 30px;
+            height: 30px;
+        }
+        .decrypt, label{
+            padding-left: 16px;
+        }
+
+        .selector{
+            display: flex;
+            gap: 32px;
+        }
+        .encrypt{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .decrypt{
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .main-btn{
+            display: flex;
+            align-items: center;
+            filter: drop-shadow(0px 20px 40px #D8D8D8);
+        }
+
+        .add-file{
+            background: #fff;
+            padding: 20px 110px 20px 20px;
+            border-radius: 8px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            font-size: 24px;
+            
+        }
+        .add-icon button{
+            border: none;
+            background:#00C497 ;
+            border-radius: 8px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            
+        }
+
+        .add-icon img{
+            padding: 20px 20px;
+        }
+
+
+        .steps{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 40px;
+            margin-top: 100px;    
+}
+
+.step-container{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    filter: drop-shadow(0px 20px 40px #D8D8D8);
+}
+.step-container strong{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.step-container p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 150%;
+}
+.step-container strong span{
+    color: #00C497;
+    font-weight: 600;
+}
+        
+       
+    </style>
+</head>
+
+<body>
+    <!-- <div id="container">
+     <a href="/generate_key" class="button"> Download Your Secret Key </a>
+    <a href="/encrypt-folder" class="button">Encrypt Folder </a>
+    <a href="/encrypt-file" class="button">Encrypt File </a>
+    
+    <a href="/decrypt-folder" class="button">Decrypt Folder </a>
+    <a href="/decrypt-file" class="button">Decrypt File </a>
+    </div> -->
+<div class="container">
+    <div class="wrapper">
+    <header>
+        <nav class="nav">
+            <div class="for-lgo">
+            <a  class="logo"><img src="logo.png"></a>
+        </div>
+        <div class="header-btn">
+            <div> <p class="for-button">Download Your Unique Key</p></div>
+            <div><img src="/encrypt-and-decrypt-zip-files-with-secret-key-using-AES-algorithms/templates/download.png"></div>
+            
+        </div>
+        </nav>
+    </header>
+
+    <section>
+            <div class="main-heading">
+                <h1>Free Encrypt And Decrypt<br>
+                    Your Files And Folders With Your<br>
+                    <span>Unique Secret Key</span></h1>
+            </div>
+
+            <div class="main-mid">
+
+            <div class="selector">
+                <div class="encrypt">
+                    <input type="checkbox" id="Encrypt" class="encryptcheckbox" name="Encrypt">
+                    <label for="Encrypt"> Encrypt</label>
+                </div>
+                <div class="decrypt">
+                    <input type="checkbox" id="decrypt" class="decryptcheckbox" name="decrypt">
+                    <label for="decrypt"> Decrypt</label>
+                </div>
+            </div>
+
+            <div class="main-btn">
+                <div class="add-file">
+                    <a>Add Files</a> 
+            </div>
+            <div class="add-icon">
+                <button><img src="/encrypt-and-decrypt-zip-files-with-secret-key-using-AES-algorithms/templates/add.png"></img></button>
+            </div>
+            </div>
+        </div>
+
+        <div class="steps">
+
+                <div class="step-container">
+                    <div><img src="/encrypt-and-decrypt-zip-files-with-secret-key-using-AES-algorithms//templates/icon-1.png"></div>
+                    <strong>Download Your Unique Key</strong>
+                    <p>You Must Download Your Unique Key Before Encrypting Or Decrypting</p>
+                </div>
+
+                <div class="step-container">
+                    <div><img src="/encrypt-and-decrypt-zip-files-with-secret-key-using-AES-algorithms//templates/icon-2.png"></div>
+                    <strong>Choose Your File Or Folder</strong>
+                    <p>Choose Your Prefered Files or Folder to Encrypt/Decrypt </p>
+                </div>
+
+                <div class="step-container">
+                    <div><img src="/encrypt-and-decrypt-zip-files-with-secret-key-using-AES-algorithms//templates/icon-3.png"></div>
+                    <strong>Paste Key And Process</strong>
+                    <p>Paste Your Downloaded Unique Key To Encrypt Or Decrypt</p>
+                </div>
+
+                
+
+        </div>
+    </section>
+
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
